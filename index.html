@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K9 Store</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 , h3{
+            text-align: center;
+            color: #333;
+        }
+        #items-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .item {
+            border: 2px solid #ccc;
+            border-radius: 7px;
+            padding: 10px;
+            margin: 15px;
+            width: 200px;
+            background-color: #fff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .item img {
+            max-width: 100%;
+            height: auto;
+        }
+        #cart {
+            border: 2px solid #ccc;
+            border-radius: 7px;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        #cart ul {
+            list-style: none;
+            padding: 10px;
+        }
+        #cart ul li {
+            margin-bottom: 5px;
+            color: #333;
+        }
+        button {
+            background-color: #B533FF;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #B533FF;
+        }
+    </style>
+</head>
+<body>
+
+<h1>"Porque cada Pata merece lo mejor"</h1>
+<h2> Carrito de compras </h2>
+
+<div id="items-container">
+    <!-- Aquí se generará dinámicamente la lista de productos -->
+</div>
+
+<div id="cart">
+    <h3>Carrito</h3>
+    <ul id="cart-items">
+        <!-- Aquí se mostrarán los elementos del carrito -->
+    </ul>
+    <button onclick="checkout()">Comprar</button>
+</div>
+
+<link rel="stylesheet" href="style.css" />
+<script src="script.js"></script>
+
+
+</body>
+</html>
